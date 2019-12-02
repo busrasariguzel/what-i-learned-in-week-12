@@ -39,7 +39,24 @@ const Stack = function() {
 ---
 
 ### `TODOM`
-* In this project, 
+* In this project, we practice event listener functions and created a to do list. 
+* The challenge was to remove the text after clicking on it. The second to do project had the similar challenge. We were supposed to have line through after clicking it and removing them after clicking remove button. We,as a group, tried many times and spend time to overcome this challenge.
+* Some code we used in this project :
+``` javascript
+const removeButton = document.querySelector('.remove-todo');
+removeButton.onclick = removeFromList;
+let newLi = document.querySelectorAll('li');
+const clearCompleted = function (){
+  for (let i = 0; i<newLi.length; i++){
+    if (newLi[i].textDecoration ='line-through'){
+        newLi[i].style.display= 'none'
+    }
+    }
+}
+
+document.querySelector('.clear-all').addEventListener('click', clearList)
+document.querySelector('.remove-all-todo').addEventListener('click', clearCompleted)
+```
 
 
 
