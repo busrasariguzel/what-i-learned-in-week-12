@@ -14,11 +14,32 @@
 * Here is a snapshot of my project with bootstrap:
 
 * ![image](component.png)
+----
 
-### `Object orientred Programming`
 
-Const Todo = {
-	Name,
-	Date,
-	Complete,
+### `Object Oriented Programing`
+``` Javascript
+const Stack = function() {
+  return {
+    items : [],
+    
+    add : function(str){
+      return this.items.push(str);
+    },
+    remove : function() {
+      return this.items.pop();
+    },
+    peek : function() {
+      return this.items[this.items.length -1]
+
+    },
+  }
 }
+```
+---
+
+### `TODOM`
+* In this project, 
+
+
+
